@@ -13,6 +13,16 @@ public class Library {
 	private int itemID;
 	private int memberID;
 
+	public Library() {
+		super();
+	}
+
+	public Library(int itemID, int memberID) {
+		super();
+		this.itemID = itemID;
+		this.memberID = memberID;
+	}
+
 	public boolean checkOut(int itemID, int memberID) {
 		Item item = this.items.stream().filter(i -> i.getId() == itemID).findFirst().orElse(null);
 		Member member = this.members.stream().filter(m -> m.getId() == memberID).findFirst().orElse(null);
@@ -24,7 +34,7 @@ public class Library {
 			return true;
 		}
 	}
-	
+
 	public boolean checkIn(int itemID, int memberID) {
 		Item item = this.items.stream().filter(i -> i.getId() == itemID).findFirst().orElse(null);
 		Member member = this.members.stream().filter(m -> m.getId() == memberID).findFirst().orElse(null);

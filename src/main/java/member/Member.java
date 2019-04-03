@@ -44,10 +44,6 @@ public class Member {
 		return checkedOutItems;
 	}
 
-	public void setCheckedOutItems(List<Item> checkedOutItems) {
-		this.checkedOutItems = checkedOutItems;
-	}
-
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", name=" + name + ", checkedOutItems=" + checkedOutItems + "]";
