@@ -29,7 +29,7 @@ public abstract class Item {
 	}
 
 	public void setID(int id) {
-		
+		this.id = id;
 	}
 
 	public void setName(String name) {
