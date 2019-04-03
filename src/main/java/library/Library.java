@@ -43,7 +43,7 @@ public class Library {
 	}
 
 	public boolean addMember(Member member) {
-		member.setId(this.memberID);
+		member.setId(this.memberID++);
 		return this.members.add(member);
 	}
 
